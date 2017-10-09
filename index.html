@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>week-4-game-crystals</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-md-4">
+				
+				<h1>Crystals Collector!</h1>
+
+			</div>
+		
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-5">
+
+				<div id="rules">
+
+					<p>You will be given a random number at the start of the game.</p>
+					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+					<p>You win the game by matching your total score to a random number; you lose the game if your total score goes above the random number.</p>
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+					<p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+				</div>
+			
+			</div>
+		
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-3">
+				
+				<div id="target">
+
+					<p>Target score:</p>
+					<h2>0</h2>
+			
+				</div>
+
+			</div>
+
+			<div class="col-md-1">
+				
+				<div id="counter">
+
+					<p>Wins: </p>
+					<p>Losses:</p>
+			
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = row>
+			
+			<div class="col-md-5">
+
+				<div class="crystals">
+
+					<button class="button" id="buttonBlue"><img src="assets/images/blue.jpg" alt="blue" style="width:100px;height:100px"></button>
+					<button class="button" id="buttonWhite"><img src="assets/images/white.jpg" alt="white" style="width:100px;height:100px">
+					<button class="button" id="buttonGreen"><img src="assets/images/green.jpg" alt="green" style="width:100px;height:100px">
+					<button class="button" id="buttonPurple"><img src="assets/images/purple.jpg" alt="purple" style="width:100px;height:100px">
+
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-3">
+
+				<div id="announce">
+
+					<p>Your current score: </p>
+
+				</div>
+			
+			</div>
+		
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-3">
+
+				<div id="usertotal">
+			
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>

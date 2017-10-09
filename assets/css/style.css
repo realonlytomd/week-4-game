@@ -1,0 +1,31 @@
+.container-fluid {
+	background-color: lavender;
+}
+
+h1 {
+	background-color: orange;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+#rules {
+	background-color: #f9d383;
+	padding: 10px;
+}
+
+#target {
+	background-color: #fce781;
+	padding: 10px;
+}
+
+#counter {
+	background-color: #f27387;
+	padding: 10px;
+}
+
+#announce {
+	background-color: #b79677;
+	padding: 10px;
+}
+
