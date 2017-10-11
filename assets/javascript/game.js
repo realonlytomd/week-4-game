@@ -6,14 +6,20 @@ $(document).ready(function() {
 // it is reset to another random number after every round of play.
 
 var targetNumber = 0;
+//this is a test. This is games.js, not game.js.  Reset index.html to game.js when submitting 
+//homework.
+// Need to find a way to reset game.  going to try making everything from this function:
+//theTarget, inside another function that can be called after wins, or losses is reached.
+
 
 	function theTarget() {
 		targetNumber = Math.floor((Math.random() * 101) + 1);
     	targetNumber += 18;
+    	$("h2").text(targetNumber);
 	}
 
-	console.log(theTarget(targetNumber));
-	$("h2").text(targetNumber);
+	theTarget(targetNumber);
+	
 
 //The total score in #usertotal is set to 0.  Put it in a variable, userTotal.
 	var userTotal = 0;
@@ -24,10 +30,12 @@ var targetNumber = 0;
 
 
 //put random values on each crystal at the start of every round of play. between 1 and 12.
-//create a for loop 4 times,  - call the function 4 times, once for each crystal, before round of play
+//create a for loop,  - call the function 4 times, once for each crystal, before round of play
 // run a random number generator, get the result and assign it as an attr to a crystal
 	
 	var crystalValue = [];
+
+	function assignCrystals() {
 
 	for (var i = 0; i < 4; i++) {
 		crystalValue[i] = Math.floor((Math.random() * 11) + 1);
@@ -40,6 +48,10 @@ var targetNumber = 0;
 		$("#buttonWhite").attr("crystalValue", crystalValue[1]);
 		$("#buttonGreen").attr("crystalValue", crystalValue[2]);
 		$("#buttonPurple").attr("crystalValue", crystalValue[3]);
+
+	}
+
+	assignCrystals();
 
 
 
@@ -59,17 +71,23 @@ var targetNumber = 0;
 		if (userTotal === targetNumber) {
 			wins++;
 			console.log("Wins = " + wins)
+			userTotal = 0;
+			theTarget();
+			assignCrystals();
 		}
 
 		if (userTotal > targetNumber) {
 			losses++;
 			console.log("Losses = " + losses)
+			userTotal = 0;
+			theTarget();
+			assignCrystals();
 		}
 
 		$("#wins").text(wins);
 		$("#losses").text(losses);
 
-
+	});
 // userTotal is checked to see if it is equal to or greater than targetNumber after each click, and
 // subsequent addition to userTotal.
 
@@ -79,7 +97,5 @@ var targetNumber = 0;
 
 // if either of these things happen, then the round is over, targetNumber is regenerated, and userTotal is 
 //set to 0.  Crystals are given new randomly generated values.
-	});
-//user then clicks a crystal to start another round.
 
 });
