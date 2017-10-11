@@ -25,7 +25,12 @@ h1 {
 }
 
 #announce {
-	background-color: #b79677;
+	background-color: #d7e185;
+	padding: 10px;
+}
+
+#usertotal {
+	background-color: #d7e185;
 	padding: 10px;
 }
 
