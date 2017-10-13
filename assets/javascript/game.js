@@ -35,6 +35,11 @@ var targetNumber = 0;
 	
 	var crystalValue = [];
 
+	// returns a number between min and max (inclusive)  -  generic random generator
+	//function randNum(min, max) {
+	//	return Math.floor(Math.random()*(max-min+1)+min);
+	//}
+
 	function assignCrystals() {
 
 	for (var i = 0; i < 4; i++) {

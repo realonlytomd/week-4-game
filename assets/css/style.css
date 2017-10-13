@@ -12,21 +12,24 @@ h1 {
 #rules {
 	background-color: #f9d383;
 	padding: 10px;
+	margin-bottom: 10px;
 }
 
 #target {
 	background-color: #fce781;
 	padding: 10px;
+	margin-bottom: 10px;
 }
 
 #counter {
 	background-color: #f27387;
-	padding: 10px;
+	padding: 21px;
 }
 
 #announce {
 	background-color: #d7e185;
 	padding: 10px;
+	margin-top: 10px;
 }
 
 #usertotal {
